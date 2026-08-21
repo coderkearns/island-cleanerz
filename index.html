@@ -17,6 +17,7 @@
         --secondary: #3ba5ca;
         --accent: #f5af42;
         --text: #1a1e1c;
+        --background: #ffffff;
       }
 
       * {
@@ -39,6 +40,7 @@
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
         color: var(--text);
+        background-color: var(--background);
       }
 
       main {
@@ -93,6 +95,25 @@
         font-weight: 800;
       }
 
+      a.btn {
+        margin-top: 1rem;
+        background-color: var(--primary);
+        color: var(--background);
+        padding: 0.5rem 2rem;
+        border-radius: 99rem;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.15s ease;
+      }
+
+      a.btn:focus,
+      a.btn:active {
+        background-color: var(--accent);
+        outline: none;
+      }
+
       @media (max-width: 600px) {
         body {
           font-size: calc(min(18px, 4vw) + 0.1rem);
@@ -133,6 +154,7 @@
           <li>Window cleaning</li>
           <li>Pressure washing</li>
         </ul>
+        <a class="btn" href="tel:9167171575">Call to get a quote</a>
       </section>
     </main>
   </body>
